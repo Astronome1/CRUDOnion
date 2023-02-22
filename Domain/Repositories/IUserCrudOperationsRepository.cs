@@ -10,7 +10,7 @@ namespace Domain.Repositories
     public interface IUserCrudOperationsRepository
     {
         Task<IEnumerable<UserModel>> GetAllUsers();
-        Task<UserModel> GetUserById(int id);
+        Task<IEnumerable<UserModel>> GetUserById(int id);
         Task InsertUser(UserModel user);    
         Task DeleteUser(int id);
     }
