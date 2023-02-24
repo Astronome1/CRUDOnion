@@ -2,15 +2,8 @@
 using Domain.Entities;
 using Domain.Repositories;
 using Microsoft.Extensions.Configuration;
-using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
@@ -20,7 +13,7 @@ namespace Persistence.Repositories
 
         public UserCrudOperationsRepository(IConfiguration configuration)
         {
-            _configuration= configuration;
+            _configuration = configuration;
         }
         public async Task DeleteUser(int id)
         {
@@ -34,7 +27,7 @@ namespace Persistence.Repositories
         public async Task<IEnumerable<UserModel>> GetAllUsers()
         {
             string connectionId = "Default";
-            string storedProcedure = "dbo.spUser_Get";
+            string storedProcedure = "dbo.spUser_GetAll";
             using IDbConnection connection = new SqlConnection(_configuration.GetConnectionString(connectionId));
             return await connection.QueryAsync<UserModel>(storedProcedure);  
              
