@@ -8,6 +8,6 @@ namespace Services
         Task<UserInfoDto> CreateUser(UserInfoDto user);
         Task DeleteUser(int id);
         Task<IEnumerable<UserInfoDto>> GetAllUsers();
-        Task<UserInfoDto> GetSpecificUser(int id);
+        Task<IEnumerable<UserInfoDto>> GetSpecificUser(int id);
     }
 }

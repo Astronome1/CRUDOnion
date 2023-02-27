@@ -23,7 +23,7 @@ namespace Services
             return userinfodto;
         }
 
-        public async Task<UserInfoDto> GetSpecificUser(int id)
+        public async Task<IEnumerable<UserInfoDto>> GetSpecificUser(int id)
         {
             var specificUser = await _repositoryManager.UserCrudOperationsRepository.GetUserById(id);
             if (specificUser == null)
@@ -31,7 +31,7 @@ namespace Services
                 throw new ArgumentNullException(nameof(specificUser));
             }
 
-            var specificUserDto = specificUser.Adapt<UserInfoDto>();
+            var specificUserDto = specificUser.Adapt<IEnumerable<UserInfoDto>>();
             return specificUserDto;
         }
 
