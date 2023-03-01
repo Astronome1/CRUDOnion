@@ -20,6 +20,7 @@ It is recommended that you use Visual Studio for this project but feel free to u
 
 The project is refactored to make sure there is minimal coupling between the different parts of the project.
 You can see that the project is divided into different parts following the onion architecture. The Core folder contains your Domain and service layer while the Infrustructure folder contains your Persistence layer(and if you had a normal API project the Presentation layer would also be here).
+<br />
 In the Core you have different class libraries: Contracts, Domain, Service, Service.Abstractions. 
 The Domain class library is the innermost layer of the onion and this contains your most important entities(models), commonly referred to as core models. The Domain class also has the Repository folder which has the interfaces with the definition of the methods which can make changes to the core entity. In this repository tht is the IUserCrudOperationsRepository. The Repository layer also has the IRepositoryManager whose function is to create an instance of an object that implements the interface which in this case is the IUserCrudOperationsRepository.
 The Contracts class library contains a dto(similar to our user model) which we will use to pass data to our frontend, thus not exposing our domain model to the frontend.
