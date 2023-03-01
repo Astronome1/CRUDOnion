@@ -7,17 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{35017F4D-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{29D5A8EE-2F52-4767-A3C0-81596CB5C29B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontAPI", "FrontAPI\FrontAPI.csproj", "{5F0E834A-FE53-4CAA-A149-D216524B5F58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrontAPI", "FrontAPI\FrontAPI.csproj", "{5F0E834A-FE53-4CAA-A149-D216524B5F58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5E37C03A-BEB2-4553-8CF1-AEE18DB52BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{5E37C03A-BEB2-4553-8CF1-AEE18DB52BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{396C2F5A-D8CB-46D1-B45C-BDDCD2ED9976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{396C2F5A-D8CB-46D1-B45C-BDDCD2ED9976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{12212B4C-496A-4217-A392-A9A9A35EBD1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{12212B4C-496A-4217-A392-A9A9A35EBD1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Abstractions", "Service.Abstractions\Service.Abstractions.csproj", "{D9957FD2-B467-4D5A-8659-3D9D2D82BA11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Abstractions", "Service.Abstractions\Service.Abstractions.csproj", "{D9957FD2-B467-4D5A-8659-3D9D2D82BA11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{0A014CFF-5AD7-41D0-9013-B3B505D52560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{0A014CFF-5AD7-41D0-9013-B3B505D52560}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "UserDB", "..\MinimalApiDemoApp\UserDB\UserDB.sqlproj", "{09357652-F692-4C40-BF54-924ED139E236}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,12 @@ Global
 		{0A014CFF-5AD7-41D0-9013-B3B505D52560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A014CFF-5AD7-41D0-9013-B3B505D52560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A014CFF-5AD7-41D0-9013-B3B505D52560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09357652-F692-4C40-BF54-924ED139E236}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
