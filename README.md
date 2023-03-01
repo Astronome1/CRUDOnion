@@ -10,7 +10,7 @@ It is recommended that you use Visual Studio for this project but feel free to u
 
 1. Clone this project 
 2. Open the project in visual studio 
-3. Download [this database project](https://github.com/Astronome1/CRUDMinimalApi/tree/master/UserDB) Publish the database project to your database of choice(MSSQL, MySQL, Postgres)
+3. Download [this database project](https://github.com/Astronome1/CRUDMinimalApi/tree/master/UserDB) and publish the database project to your database of choice(MSSQL, MySQL, Postgres)
 4. Set the MinimalApi project in the solution as your startup project.
 5. Add your connection string to appsettings.json under Default  ![appsettingsfile](https://github.com/Astronome1/CRUDOnion/blob/master/appsettings.PNG)
 6. Run the project by using the "dotnet run" command or click the run button on your IDE.
