@@ -1,6 +1,6 @@
 # MinimalApi with onion architecture Template Project 
 
-## A fully template project written in c# and the dotnet Framework demonstrating and being a starting point for creating projects with the Onion architecture
+## A template project written in c# and the dotnet Framework demonstrating and being a starting point for creating projects with the Onion architecture
 
 This project is a template that was created by refactoring an existing [project](https://github.com/Astronome1/CRUDMinimalApi) to make sure the backend adheres to the onion architecture[check link](https://codewithmukesh.com/blog/onion-architecture-in-aspnet-core/). Simple CRUD operations are performed on a User object using the Dapper ORM.
 
